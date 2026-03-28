@@ -82,7 +82,7 @@ def battle(tankType):
             enemyShellPower=0.92
             enemyAccuacy=0.5
         else:
-            tankName=RED + "Maus (saten embodied)" + END
+            tankName=RED + "Maus (satin embodied)" + END
             enemyLowerFront=1
             enemyUpperFront=1
             enemyTurretFront=1
