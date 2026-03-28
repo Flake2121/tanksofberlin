@@ -2,7 +2,7 @@ from random import randint
 from time import sleep
 from os import system
 from platform import system as systemType
-from math import ceil
+
 
 RED = "\033[0;31m"
 GREEN = "\033[0;32m"
@@ -43,21 +43,21 @@ def battle(tankType):
             enemyUpperFront=95
             enemyTurretFront=90
             enemyShellPower=0.6
-            enemyAccuacy=0.5
+            enemyAccuacy=0.35
         elif tankType >=21 and tankType <=30:
             tankName="Stug"
             enemyLowerFront=85
             enemyUpperFront=85
             enemyTurretFront=-1
             enemyShellPower=0.65
-            enemyAccuacy=0.5
+            enemyAccuacy=0.4
         elif tankType >=31 and tankType <=40:
             tankName="Tiger 1"
             enemyLowerFront=75
             enemyUpperFront=80
             enemyTurretFront=60
             enemyShellPower=0.7
-            enemyAccuacy=0.5
+            enemyAccuacy=0.45
         elif tankType >=41 and tankType <=60:
             tankName="Panther"
             enemyLowerFront=70
@@ -72,7 +72,7 @@ def battle(tankType):
             enemyUpperFront=1
             enemyTurretFront=25
             enemyShellPower=0.92
-            enemyAccuacy=0.5
+            enemyAccuacy=0.6
 
         elif tankType >=65 and tankType <=70:
             tankName="Jagdpanther"
@@ -80,9 +80,26 @@ def battle(tankType):
             enemyUpperFront=25
             enemyTurretFront=25
             enemyShellPower=0.92
-            enemyAccuacy=0.5
+            enemyAccuacy=0.6
+        
+        elif tankType >=71 and tankType <=78:
+            tankName="Jagdpanzer IV"
+            enemyLowerFront=78
+            enemyUpperFront=60
+            enemyTurretFront=60
+            enemyShellPower=0.65
+            enemyAccuacy=0.45
+        
+        elif tankType >=79 and tankType <=79:
+            tankName="Sturmmorser"
+            enemyLowerFront=75
+            enemyUpperFront=50
+            enemyTurretFront=50
+            enemyShellPower=100
+            enemyAccuacy=0.1
+        
         else:
-            tankName=RED + "Maus (satin embodied)" + END
+            tankName=RED + "Maus (saten embodied)" + END
             enemyLowerFront=1
             enemyUpperFront=1
             enemyTurretFront=1
@@ -91,7 +108,7 @@ def battle(tankType):
 
 
 
-        print("You have encounterd a" + GREEN, tankName + END)
+        print("You have encounterd a" GREEN, tankName + END)
 
 
         if randint(1,2)==1:
@@ -210,4 +227,3 @@ while distanceleft>0:
         system("cls")
     else:
         system("clear")"""
-    print("nig*a")
