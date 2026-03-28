@@ -210,3 +210,4 @@ while distanceleft>0:
         system("cls")
     else:
         system("clear")"""
+    print("nig*a")
