@@ -108,7 +108,7 @@ def battle(tankType):
 
 
 
-        print("You have encounterd a" GREEN, tankName + END)
+        print("You have encounterd a" + GREEN, tankName + END)
 
 
         if randint(1,2)==1:
