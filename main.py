@@ -162,7 +162,7 @@ def battle(tankType):
 
 
 def engagement(enemyPen, enemyAccuacy):
-    enemyAim=randint(1, ceil((1/enemyAccuracy)*3)
+    enemyAim=randint(1, ceil((1/enemyAccuacy)*3))
     
     print("The enemy are now scoping in on you")
 
