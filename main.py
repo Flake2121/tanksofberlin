@@ -2,7 +2,7 @@ from random import randint
 from time import sleep
 from os import system
 from platform import system as systemType
-
+from math import ceil
 
 RED = "\033[0;31m"
 GREEN = "\033[0;32m"
